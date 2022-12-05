@@ -1,11 +1,12 @@
 fun main() {
 
-    fun parsePairs(input: List<String>): List<List<Int>> {
+    fun parsePairs(input: List<String>): List<List<IntRange>> {
         val map = input.map { it.split(",") }
             .map {
-                it.flatMap { it2 ->
-                    it2.split("-")
-                }.map { it3 -> it3.toInt() }
+                it.map { it2 ->
+                    val split = it2.split("-")
+                    split[0].toInt()..split[1].toInt()
+                }
             }
         return map
     }
@@ -13,14 +14,15 @@ fun main() {
     fun part1(input: List<String>): Int {
         return parsePairs(input)
             .filter {
-                it[0] >= it[2] && it[1] <= it[3] || it[2] >= it[0] && it[3] <= it[1]
+                val intersect = it[0].intersect(it[1])
+                intersect.containsAll(it[0].toList()) || intersect.containsAll(it[1].toList())
             }.size
     }
 
     fun part2(input: List<String>): Int {
         return parsePairs(input)
             .filter {
-                it[0] >= it[2] && it[0] <= it[3] || it[1] >= it[2] && it[1] <= it[3] || it[2] >= it[0] && it[2] <= it[1]
+                it[0].intersect(it[1]).isNotEmpty()
             }.size
     }
 
