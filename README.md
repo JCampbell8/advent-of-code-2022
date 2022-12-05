@@ -1,5 +1,7 @@
 # advent-of-code-2022
 
+<!--- advent_readme_stars table --->
+
 Welcome to the Advent of Code[^aoc] Kotlin project created by [jcampbell8][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
 
 In this repository, jcampbell8 is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
