@@ -9,6 +9,7 @@
 | [Day 2](https://adventofcode.com/2022/day/2) | ⭐ | ⭐ |
 | [Day 3](https://adventofcode.com/2022/day/3) | ⭐ | ⭐ |
 | [Day 4](https://adventofcode.com/2022/day/4) | ⭐ | ⭐ |
+| [Day 5](https://adventofcode.com/2022/day/5) | ⭐ | ⭐ |
 <!--- advent_readme_stars table --->
 
 Welcome to the Advent of Code[^aoc] Kotlin project created by [jcampbell8][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
